@@ -1,59 +1,38 @@
-# **Abarrotes Tizimín - Requerimientos Funcionales**
+Abarrotes Tizimín-Requerimientos Funcionales
 
-## **1. Gestión de Clientes**
-- El sistema debe permitir:
-  - **Registrar nuevos clientes**, solicitando:
-    - Nombre
-    - Apellido paterno
-    - Dirección completa:
-      - Calle, número, colonia
-      - Código postal, ciudad, estado
-      - Teléfono
-  - **Consultar clientes** en una lista general.
-  - **Modificar información** de cualquier cliente registrado en caso de cambios o errores.
-  - **Eliminar clientes**, utilizando su nombre como identificador (no se permiten nombres duplicados).
+1. Gestión de Clientes
+•	El sistema debe permitir registrar nuevos clientes, solicitando su nombre, apellido paterno y los datos completos de su dirección (calle, número, colonia, código postal, ciudad, estado y teléfono).
+•	Los clientes deben poder ser consultados en una lista general.
+•	Se debe ofrecer la opción de modificar la información de cualquier cliente registrado, en caso de que se presenten cambios o errores en los datos.
+•	El sistema debe permitir eliminar clientes utilizando su nombre como identificador. No se permitirá registrar dos clientes con el mismo nombre.
 
-## **2. Gestión de Productos**
-- El sistema debe permitir:
-  - **Registrar nuevos productos**, solicitando:
-    - Nombre
-    - Precio al público y precio de proveedor
-    - Cantidad inicial en inventario
-  - **Visualizar productos** en el inventario mostrando toda su información relevante.
-  - **Modificar datos** de un producto, como:
-    - Nombre
-    - Actualización de precios
-    - Ajuste en cantidad disponible
-  - **Eliminar productos**, utilizando su nombre como referencia (no se permiten nombres duplicados).
+2. Gestión de Productos
+•	El sistema debe permitir registrar nuevos productos, solicitando el nombre, precio al público, precio de proveedor y cantidad inicial en inventario.
+•	Los productos deben poder visualizarse en un apartado de inventario, mostrando toda la información relevante.
+•	El sistema debe permitir modificar los datos de un producto, como cambiar su nombre, actualizar precios o ajustar la cantidad disponible.
+•	También debe ser posible eliminar productos existentes, utilizando su nombre como referencia. No se permitirá duplicar nombres de productos.
+3. Realización de Compras
+•	El sistema debe permitir que un cliente realice una compra seleccionando productos del inventario.
+•	Durante la compra, el cliente podrá elegir la cantidad deseada de cada producto, siempre verificando que haya suficiente existencia en inventario.
+•	Al finalizar una compra, el sistema debe generar un ticket que incluya el nombre del cliente, la fecha, los productos adquiridos (nombre, cantidad, precio) y el total de la compra.
 
-## **3. Realización de Compras**
-- El sistema debe permitir:
-  - **Seleccionar productos del inventario** para realizar una compra.
-  - Elegir la cantidad deseada de cada producto (verificando existencia en inventario).
-  - **Generar un ticket al finalizar** la compra, incluyendo:
-    - Nombre del cliente
-    - Fecha
-    - Productos adquiridos (nombre, cantidad, precio)
-    - Total de la compra
+4. Visualización de Inventario
+•	El sistema debe ofrecer la opción de consultar el inventario actualizado, mostrando el listado de productos disponibles junto con su cantidad en existencia.
 
-## **4. Visualización de Inventario**
-- Opción para **consultar el inventario actualizado**.
-- Mostrar productos disponibles junto con su cantidad en existencia.
+5. Visualización de Clientes
+•	El sistema debe ofrecer una sección donde se pueda consultar de manera actualizada todos los clientes registrados.
 
-## **5. Visualización de Clientes**
-- Sección para **consultar clientes registrados** de manera actualizada.
+6. Control de Consistencia de Datos
+•	El sistema debe asegurar que no existan clientes ni productos con nombres duplicados.
+•	No se permitirá realizar una compra si no hay suficiente stock del producto seleccionado.
+•	Todas las modificaciones en clientes o productos deberán reflejarse inmediatamente en el sistema.
 
-## **6. Control de Consistencia de Datos**
-- Asegurar que:
-  - No existan clientes ni productos con nombres duplicados.
-  - No se permita realizar una compra sin suficiente stock del producto seleccionado.
-  - Todas las modificaciones en clientes o productos se reflejen inmediatamente en el sistema.
+7. Menú de Opciones
+Al iniciar, el sistema mostrará un menú principal que debe incluir las siguientes opciones:
+1.	Registrar un cliente.
+2.	Registrar un producto.
+3.	Inventario (consultar, modificar o eliminar productos).
+4.	Clientes (consultar, modificar o eliminar clientes).
+5.	Realizar una compra.
+6.	Salir.
 
-## **7. Menú de Opciones**
-Al iniciar, el sistema mostrará un menú principal con las siguientes opciones:
-1. **Registrar un cliente.**
-2. **Registrar un producto.**
-3. **Inventario: consultar, modificar o eliminar productos.**
-4. **Clientes: consultar, modificar o eliminar clientes.**
-5. **Realizar una compra.**
-6. **Salir.**
