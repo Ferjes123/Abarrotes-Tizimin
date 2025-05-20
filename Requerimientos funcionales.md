@@ -2,18 +2,16 @@ Abarrotes Tizimín-Requerimientos Funcionales
 
 1. Gestión de Clientes
 •	El sistema debe permitir registrar nuevos clientes, solicitando su nombre, apellido paterno y los datos completos de su dirección (calle, número, colonia, código postal, ciudad, estado y teléfono).
-•	Los clientes deben poder ser consultados en una lista general.
-•	Se debe ofrecer la opción de modificar la información de cualquier cliente registrado, en caso de que se presenten cambios o errores en los datos.
+•	Los clientes deben poder ser consultados con su respectiva información en una lista general.
 •	El sistema debe permitir eliminar clientes utilizando su nombre como identificador. No se permitirá registrar dos clientes con el mismo nombre.
 
 2. Gestión de Productos
 •	El sistema debe permitir registrar nuevos productos, solicitando el nombre, precio al público, precio de proveedor y cantidad inicial en inventario.
 •	Los productos deben poder visualizarse en un apartado de inventario, mostrando toda la información relevante.
-•	El sistema debe permitir modificar los datos de un producto, como cambiar su nombre, actualizar precios o ajustar la cantidad disponible.
 •	También debe ser posible eliminar productos existentes, utilizando su nombre como referencia. No se permitirá duplicar nombres de productos.
 3. Realización de Compras
 •	El sistema debe permitir que un cliente realice una compra seleccionando productos del inventario.
-•	Durante la compra, el cliente podrá elegir la cantidad deseada de cada producto, siempre verificando que haya suficiente existencia en inventario.
+•	Durante la compra, el  podrá elegir la cantidad deseada de cada producto, siempre verificando que haya suficiente existencia en inventario.
 •	Al finalizar una compra, el sistema debe generar un ticket que incluya el nombre del cliente, la fecha, los productos adquiridos (nombre, cantidad, precio) y el total de la compra.
 
 4. Visualización de Inventario
@@ -26,13 +24,16 @@ Abarrotes Tizimín-Requerimientos Funcionales
 •	El sistema debe asegurar que no existan clientes ni productos con nombres duplicados.
 •	No se permitirá realizar una compra si no hay suficiente stock del producto seleccionado.
 •	Todas las modificaciones en clientes o productos deberán reflejarse inmediatamente en el sistema.
-
 7. Menú de Opciones
-Al iniciar, el sistema mostrará un menú principal que debe incluir las siguientes opciones:
-1.	Registrar un cliente.
-2.	Registrar un producto.
-3.	Inventario (consultar, modificar o eliminar productos).
-4.	Clientes (consultar, modificar o eliminar clientes).
-5.	Realizar una compra.
-6.	Salir.
+Se trabajará con javaFx, Al iniciar, el sistema mostrará un menú principal que debe incluir las siguientes opciones:
+•	Clientes (Registrar un cliente, consultar o eliminar clientes).
+•	Inventario (Registrar un producto, consultar o eliminar productos).
+•	Compra.
+•	Salir.
+
+8. Persistencia de datos
+•	El programa deberá ser capaz de guardar los datos de clientes y productos registrados a pesar de que la ejecución del programa sea terminada, para continuar trabajando en futuras sesiones.
+•	Guardará los datos en un documento tipo .txt 
+•	La persistencia deberá asegurar que los datos se guarden de manera correcta 
+
 
