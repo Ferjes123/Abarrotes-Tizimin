@@ -26,7 +26,7 @@ Abarrotes Tizimín-Requerimientos Funcionales
 -	No se permitirá realizar una compra si no hay suficiente stock del producto seleccionado.
 -	Todas las modificaciones en clientes o productos deberán reflejarse inmediatamente en el sistema.
 
-7. Menú de Opciones (RF-007)
+7. Menú de Opciones (RF-007)  
 Se trabajará con javaFx, Al iniciar, el sistema mostrará un menú principal que debe incluir las siguientes opciones:
 -	Clientes (Registrar un cliente, consultar o eliminar clientes).
 -	Inventario (Registrar un producto, consultar o eliminar productos).
