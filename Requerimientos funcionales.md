@@ -1,9 +1,9 @@
 Abarrotes Tizimín-Requerimientos Funcionales
 
 1. Gestión de Clientes RF-001
-•	El sistema debe permitir registrar nuevos clientes, solicitando su nombre, apellido paterno y los datos completos de su dirección (calle, número, colonia, código postal, ciudad, estado y teléfono).
-•	Los clientes deben poder ser consultados con su respectiva información en una lista general.
-•	El sistema debe permitir eliminar clientes utilizando su nombre como identificador. No se permitirá registrar dos clientes con el mismo nombre.
+- El sistema debe permitir registrar nuevos clientes, solicitando su nombre, apellido paterno y los datos completos de su dirección (calle, número, colonia, código postal, ciudad, estado y teléfono).
+-	Los clientes deben poder ser consultados con su respectiva información en una lista general.
+-	El sistema debe permitir eliminar clientes utilizando su nombre como identificador. No se permitirá registrar dos clientes con el mismo nombre.
 
 2. Gestión de Productos RF-002
 •	El sistema debe permitir registrar nuevos productos, solicitando el nombre, precio al público, precio de proveedor y cantidad inicial en inventario.
