@@ -1,4 +1,4 @@
-# Abarrotes-Tizimin
+# Abarrotes-Tizimín
 
 ## 📌Introducción
 
