@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Abarrotes.controladores.ClienteController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20px 20px 20px 20px;">
+
+    <Label text="Clientes" style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <VBox spacing="5">
+            <TextField fx:id="txtNombre" promptText="Nombre"/>
+            <TextField fx:id="txtApellido" promptText="Apellido"/>
+            <TextField fx:id="txtTelefono" promptText="Teléfono"/>
+        </VBox>
+
+        <VBox spacing="5">
+            <TextField fx:id="txtCalle" promptText="Calle"/>
+            <TextField fx:id="txtNumero" promptText="Número"/>
+            <TextField fx:id="txtColonia" promptText="Colonia"/>
+            <TextField fx:id="txtCP" promptText="Código Postal"/>
+            <TextField fx:id="txtCiudad" promptText="Ciudad"/>
+            <TextField fx:id="txtEstado" promptText="Estado"/>
+        </VBox>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Agregar" onAction="#agregarCliente"/>
+        <Button text="Eliminar" onAction="#eliminarCliente"/>
+    </HBox>
+
+    <HBox spacing="10">
+        <ListView fx:id="listClientes" prefHeight="200" prefWidth="200"/>
+        <TextArea fx:id="txtDetalleCliente" editable="false" wrapText="true" prefHeight="200" prefWidth="300"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Abarrotes.controladores.CompraController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20px 20px 20px 20px;">
+
+    <Label text="Realizar Compra" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <ComboBox fx:id="comboClientes" promptText="Seleccionar cliente"/>
+        <ComboBox fx:id="comboProductos" promptText="Seleccionar producto"/>
+        <TextField fx:id="txtCantidad" promptText="Cantidad"/>
+        <Button text="Agregar al Carrito" onAction="#agregarAlCarrito"/>
+    </HBox>
+
+    <ListView fx:id="listCarrito" prefHeight="200" prefWidth="600"/>
+
+    <Button text="Finalizar Compra" onAction="#finalizarCompra"/>
+
+    <TextArea fx:id="txtTicket" prefHeight="200" prefWidth="600" editable="false"/>
+</VBox>

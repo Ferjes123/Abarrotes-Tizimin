@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.Abarrotes.controladores.MainController"
+      alignment="TOP_CENTER" spacing="30" style="-fx-padding: 40;">
+
+
+    <Label fx:id="labelBienvenida"
+           text="Bienvenido a Abarrotes Tizimín"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;"/>
+
+
+    <VBox spacing="15" alignment="CENTER">
+        <Button text="Clientes" onAction="#abrirClientes" prefWidth="200" style="-fx-font-size: 16px;"/>
+        <Button text="Inventario" onAction="#abrirInventario" prefWidth="200" style="-fx-font-size: 16px;"/>
+        <Button text="Compras" onAction="#abrirCompras" prefWidth="200" style="-fx-font-size: 16px;"/>
+        <Button text="Salir" onAction="#salir" prefWidth="200" style="-fx-font-size: 16px;"/>
+    </VBox>
+
+</VBox>

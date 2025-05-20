@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Abarrotes.controladores.InventarioController"
+      spacing="10" alignment="CENTER" style="-fx-padding: 20px 20px 20px 20px;">
+
+    <Label text="Inventario de Productos" style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="txtNombre" promptText="Nombre del producto"/>
+        <TextField fx:id="txtPrecioProveedor" promptText="Precio Proveedor"/>
+        <TextField fx:id="txtPrecioPublico" promptText="Precio Público"/>
+        <TextField fx:id="txtCantidad" promptText="Cantidad"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Agregar" onAction="#agregarProducto"/>
+        <Button text="Modificar" onAction="#modificarProducto"/>
+        <Button text="Eliminar" onAction="#eliminarProducto"/>
+    </HBox>
+
+    <ListView fx:id="listProductos" prefHeight="300" prefWidth="600"/>
+
+</VBox>
